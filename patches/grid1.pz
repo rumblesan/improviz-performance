@@ -1,0 +1,14 @@
+
+background(0, 200, 200)
+
+move(-5, -5, 0)
+
+fill(255, 0, 90)
+13 times with x
+	10 times with y
+		move(x, y, 0)
+			rotate()
+			cube()
+
+
+

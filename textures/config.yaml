@@ -1,0 +1,21 @@
+textures:
+  - name: crystal
+    file: crystal.bmp
+  - name: algorave
+    file: algorave.png
+  - name: diagsquares
+    file: diagsquares.gif
+  - name: bird1
+    file: bird1.gif
+  - name: bird2
+    file: bird2.gif
+  - name: hand1
+    file: hand1.gif
+  - name: hand2
+    file: hand2.gif
+  - name: morph1
+    file: morph1.gif
+  - name: morph2
+    file: morph2.gif
+  - name: ring
+    file: ring.gif

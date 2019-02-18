@@ -1,0 +1,20 @@
+
+paintOver()
+
+
+background(55, 255, (time * 15) % 150)
+
+stroke(255)
+
+scale(2)
+move(0, 0, -100)
+
+100 times with i
+	r = ((time + i) * 7) % 200
+	g = ((time + (3 * i)) * 10) % 100
+	fill(r, 0, g, 25 + (sin(time * 0.2) * 15))
+	rotate(0, 0, time/500 + i)
+	rotate(0, (time / 10 + i) % 2, 0)
+		rectangle(13)
+	move(0, 0, 1)
+

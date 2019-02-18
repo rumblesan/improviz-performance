@@ -1,0 +1,10 @@
+noStroke()
+v = time * 30
+rot = time/60
+10 times with i
+	rotate(rot,rot,rot)
+	r = v % 255
+	g = ((time + i) * 50) % 255
+	b = 100 + (v % 100)
+	fill(r, g, b)
+	cube(6)

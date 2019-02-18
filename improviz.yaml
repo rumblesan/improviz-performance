@@ -1,0 +1,12 @@
+font:
+  size: 36
+osc:
+  enabled: true
+textureDirectories:
+  - "./textures"
+codeFiles:
+  - "./stdlib/transformations.pz"
+  - "./stdlib/shapes.pz"
+  - "./stdlib/style.pz"
+  - "./stdlib/textures.pz"
+  - "./usercode/grid.pz"

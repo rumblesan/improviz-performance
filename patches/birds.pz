@@ -1,0 +1,30 @@
+
+bpm = 120
+beat = ((bpm / 60) * time) % 4
+rot = beat
+
+background(0, 0, 0)
+
+div = 8
+size = (beat % div + 1)
+paintOver()
+
+noStroke()
+
+t = :morph1
+move(-7, -7, 0)
+15 times with x
+	13 times with y
+		move(x, y, 0)
+			rotate(rot, rot * 3, 0)
+			v = x
+			if ((v % 2) < 1)
+				fill(0, 255, 0)
+				texture(t, (time * 10) % frames(t))
+				rectangle(size)
+			else
+				fill(255, 0, 0, 50)
+				sphere(size)
+
+
+
