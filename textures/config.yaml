@@ -3,6 +3,10 @@ textures:
     file: crystal.bmp
   - name: algorave
     file: algorave.png
+  - name: clouds
+    file: marioclouds.gif
+  - name: cowskull
+    file: cowskull.gif
   - name: diagsquares
     file: diagsquares.gif
   - name: bird1
