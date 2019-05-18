@@ -1,0 +1,6 @@
+
+40 times
+	rotate(0, 0, time/100)
+	move(0, 1, 0)
+		rotate()
+		rectangle()
