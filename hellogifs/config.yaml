@@ -1,0 +1,9 @@
+textures:
+  - name: hello1
+    file: 1.gif
+  - name: hello2
+    file: 2.gif
+  - name: hello3
+    file: 3.gif
+  - name: hello5
+    file: 5.gif

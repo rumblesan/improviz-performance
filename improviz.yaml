@@ -4,6 +4,7 @@ osc:
   enabled: true
 textureDirectories:
   - "./textures"
+  - "./hellogifs"
 codeFiles:
   - "./stdlib/transformations.pz"
   - "./stdlib/shapes.pz"
