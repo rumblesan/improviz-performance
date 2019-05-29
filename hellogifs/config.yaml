@@ -5,5 +5,7 @@ textures:
     file: 2.gif
   - name: hello3
     file: 3.gif
+  - name: hello4
+    file: 4.gif
   - name: hello5
     file: 5.gif
