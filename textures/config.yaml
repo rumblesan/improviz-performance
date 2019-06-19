@@ -23,3 +23,5 @@ textures:
     file: morph2.gif
   - name: ring
     file: ring.gif
+  - name: dancer
+    file: dancer.gif
