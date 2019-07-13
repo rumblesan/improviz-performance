@@ -6,6 +6,7 @@ textureDirectories:
   - "./textures"
   - "./hellogifs"
 codeFiles:
+  - "./stdlib/variables.pz"
   - "./stdlib/transformations.pz"
   - "./stdlib/shapes.pz"
   - "./stdlib/style.pz"
