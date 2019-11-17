@@ -1,0 +1,12 @@
+func limb(x, y, angle, length, &blk)
+	move(x, y, 0)
+		rotate(0, 0, angle)
+			move((time * 4) % length)
+				if (!isNull(blk))
+					blk()
+				else
+					cube()
+
+
+limb(-1, -2, 1, 5)
+

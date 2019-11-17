@@ -1,0 +1,14 @@
+
+green = [90, 250, 200]
+aqua = [90, 200, 250]
+pink = [255, 100, 150]
+
+colours = [aqua, pink, green]
+
+steps = [1, 3, 1, 4, 2]
+
+fill(...seq(colours))
+rotate(seq(steps, 4))
+cube(5)
+
+

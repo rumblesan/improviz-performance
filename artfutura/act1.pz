@@ -1,0 +1,25 @@
+
+alpha = 170
+green = [90, 250, 200]
+aqua = [90, 200, 250]
+pink = [255, 100, 150]
+
+noStroke()
+
+
+func things(col1, col2)
+	move(-1, -1, 0)
+		5 times with x
+			5 times with y
+				if ((x + y) % 2 > 0)
+					fill(...col1, alpha)
+				else
+					fill(...col2, alpha)
+				rotate(0, 3, time/10)
+				move(x, y, 0)
+					rotate(time/2)
+						rectangle(4)
+
+things(green, aqua)
+rotate(1, 1, 0)
+things(pink, green)

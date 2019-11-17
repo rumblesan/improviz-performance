@@ -1,0 +1,19 @@
+noFill()
+rotate(0, -0.1, 0)
+
+t = 0.4
+n = 30
+move(-n * t / 2, 0, 0)
+
+sizes = [5,-3,2,2,3,-5,2,5,-2,2,7,3,2 * sin(time/10),8]
+n times with i
+  s = (sizes[i % length(sizes)])
+  move(t, 0, 0)
+  move(0, (s - 5)/4, 0)
+    d = sin(time + i / 2)
+    r = i * 0.001
+    rotate(i^2 * 0.001, 0, 0)
+    rotate(0, d * 0.01 * i, 0)
+      4 times with j
+        move(0, 0, -1)
+        cube(t, s / (j + 1), s/2)

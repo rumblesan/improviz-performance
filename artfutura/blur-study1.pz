@@ -1,0 +1,38 @@
+motionBlur()
+animationStyle(:normal)
+
+scale(2)
+alpha = 100
+green = [90, 250, 200]
+aqua = [90, 200, 250]
+pink = [255, 100, 150]
+
+noStroke()
+t = time/2
+
+
+func pavcol(x, y, z)
+	if ((x + y) % 5 > 3)
+		fill(...pink, alpha)
+	elif ((x * z + y) % 3 > 0)
+		fill(...green, alpha)
+	elif ((x + y) % 2 > 0)
+		fill(...aqua, alpha)
+	else
+		texture(:code)
+
+func pavrect(x, y, z, s)
+	pavcol(x, y, z)
+	rectangle(s)
+
+func gridid(xVal, yVal, zVal)
+	move(-(xVal/2), -(yVal/2), -5)
+		zVal times with z
+			xVal times with x
+				yVal times with y
+					move(x, y, -z)
+						rotate(t + (x / 2 + (y * (time / 10) % 2)))
+							pavrect(x, y, z, 2)
+
+gridid(12, 12, 7)
+
