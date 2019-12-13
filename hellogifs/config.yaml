@@ -29,3 +29,7 @@ textures:
     file: 9b.gif
   - name: hello10
     file: 10.gif
+  - name: hello11
+    file: 11.gif
+  - name: hello12
+    file: 12.gif
