@@ -2,9 +2,9 @@
 
 This repository is a collection of textures, gifs and patches that are all used as part of my [Improviz](https://github.com/rumblesan/improviz) performances.
 
-## Hellocatfood GIFs
+## hellocatfood GIFs
 
-As part of the project, artist, algoraver, and all-round excellent human being [hellocatfood](https://twitter.com/hellocatfood) was commissioned to create a series of animated gifs that can me used as textures with Improviz.
+As part of the project, artist, algoraver, and all-round excellent human being [hellocatfood](https://hellocatfood.com) was commissioned to create a series of animated gifs that can me used as textures with Improviz.
 
 These excellent and unique images can be found in the [hellogifs](https://github.com/rumblesan/improviz-performance/tree/master/hellogifs) folder.
 
