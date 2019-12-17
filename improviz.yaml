@@ -12,5 +12,6 @@ codeFiles:
   - "./stdlib/style.pz"
   - "./stdlib/textures.pz"
   - "./usercode/grid.pz"
+  - "./usercode/seq.pz"
 geometryDirectories:
   - "./geometries"
