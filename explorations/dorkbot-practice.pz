@@ -1,0 +1,24 @@
+
+noStroke()
+paintOver()
+animationStyle(:normal)
+
+alpha = 70
+green = [90, 250, 200]
+aqua = [90, 200, 250]
+pink = [255, 100, 150]
+
+func col(f, v)
+	if (v % 4 < 1)
+		f(...aqua, 70)
+	elif (v % 2 < 1)
+		f(...pink, 70)
+	else
+		f(...green, 70)
+
+angs = [[2], [5], [time/10], [1]]
+
+30 times with i
+	rotate(...seq(angs), time/100)
+	col(fill, i)
+	rectangle(12)

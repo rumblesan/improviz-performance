@@ -1,0 +1,33 @@
+bpm = 120
+beat = ((bpm/60) * (time + nudge))
+
+alpha = 70
+green = [90, 250, 200]
+aqua = [90, 200, 250]
+pink = [255, 100, 150]
+
+red = [255, 0, 100, 0]
+blue = [100, 255, 0, 255]
+
+background(0, 0, 0)
+stroke(...pink)
+
+animationStyle(:motionBlur)
+
+rots = [0, 0.03, 0, 0.01]
+
+n = 10
+move(0, 3, -n/10)
+
+rotate(seq(rots), 0, 0)
+n times with x
+	rotate(seq(rots), time/10, 0.0001 + (x / (3 * n)) + time/100)
+	move(0, 0.01, 0.1)
+	if (x % 5 < 1)
+		texture(:code)
+	elif (x % 5 < 2)
+		animate(:hand2, 3)
+	else
+		animate(:bird1, 10)
+	grid(2, 2)
+		rectangle(8, 3 + beat/50)
