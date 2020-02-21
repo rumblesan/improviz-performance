@@ -1,4 +1,12 @@
 geometries:
+  - name: hello1
+    file: hello1.obj
+  - name: hello2
+    file: hello2.obj
+  - name: hello3
+    file: hello3.obj
+  - name: hello9
+    file: hello9.obj
   - name: line
     file: line.obj
   - name: triangle
