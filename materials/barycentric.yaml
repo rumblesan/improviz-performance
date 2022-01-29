@@ -1,0 +1,27 @@
+name: barycentric
+vertexShader: |
+  #version 330 core
+  layout (location = 0) in vec3 position;
+  layout (location = 2) in vec3 barycentric;
+
+  uniform mat4 MVPmatrix;
+
+  out vec3 Barycentric;
+
+  void main(void) {
+    gl_Position = MVPmatrix * vec4(position, 1.);
+    Barycentric = barycentric;
+  }
+fragmentShader: |
+  #version 330 core
+  precision mediump float;
+
+  in vec3 Barycentric;
+
+  uniform vec4 ColourMult;
+
+  out vec4 finalColour;
+
+  void main(void) {
+    finalColour = vec4(Barycentric, 1.0) * ColourMult;
+  }

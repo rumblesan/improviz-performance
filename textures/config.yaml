@@ -25,3 +25,5 @@ textures:
     file: ring.gif
   - name: dancer
     file: dancer.gif
+  - name: spiral
+    file: spiral.gif

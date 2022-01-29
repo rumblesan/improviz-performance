@@ -1,0 +1,35 @@
+name: wireframe
+vertexShader: |
+  #version 330 core
+  layout (location = 0) in vec3 position;
+  layout (location = 2) in vec3 barycentric;
+
+  uniform mat4 MVPmatrix;
+
+  out vec3 Barycentric;
+
+  void main(void) {
+    gl_Position = MVPmatrix * vec4(position, 1.);
+    Barycentric = barycentric;
+  }
+fragmentShader: |
+  #version 330 core
+  precision mediump float;
+
+  in vec3 Barycentric;
+
+  uniform float StrokeSize;
+  uniform vec4 StrokeColour;
+
+  out vec4 finalColour;
+
+  float ssize = StrokeSize / 2;
+  bool strokeArea = Barycentric.x < ssize || Barycentric.y < ssize || Barycentric.z < ssize;
+
+  void main(void) {
+    if(strokeArea) {
+      finalColour = StrokeColour;
+    } else {
+      discard;
+    }
+  }

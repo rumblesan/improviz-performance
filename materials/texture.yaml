@@ -1,0 +1,30 @@
+name: texture
+vertexShader: |
+  #version 330 core
+
+  layout(location = 0) in vec4 position;
+  layout(location = 1) in vec2 texcoord;
+
+  uniform mat4 MVPmatrix;
+
+  out vec2 Texcoord;
+
+  void main() {
+      gl_Position = MVPmatrix * position;
+      Texcoord = texcoord;
+  }
+fragmentShader: |
+  #version 330 core
+  precision mediump float;
+
+  in vec2 Texcoord;
+
+  uniform sampler2D Texture;
+  uniform float TextureAlpha;
+  uniform vec4 ColourMult;
+
+  out vec4 finalColour;
+
+  void main() {
+      finalColour = texture(Texture, Texcoord) * vec4(1, 1, 1, TextureAlpha) * ColourMult;
+  }

@@ -26,11 +26,11 @@ n = 10
 move(0, 3, -n/10)
 
 rotate(seq(rots), 0, 0)
-n times with x
+loop n times with x
 	move(sin(time) * 3, cos(time/3), 0)
 	rotate(seq(rots), 0, 0.0001 + (x / (3 * n)) + time/100)
 	move(0, 0.01, 0.1)
-	if (x % 5 < 1)
+	if (x % 5 < 2)
 		texture(:code)
 	elif (x % 5 < 2)
 		rotate(0, 0, seq(rots))

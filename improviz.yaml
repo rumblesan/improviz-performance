@@ -1,17 +1,36 @@
+screenwidth: 640
+screenheight: 480
+# fullscreen: 0
 font:
-  size: 26
-osc:
-  enabled: true
+  size: 14
+  foregroundColour: [0, 0, 0, 255]
+  backgroundColour: [255, 200, 0, 255]
+assetsDirectory: "./assets"
 textureDirectories:
   - "./textures"
   - "./hellogifs"
+materialDirectories:
+  - "./materials"
 codeFiles:
   - "./stdlib/variables.pz"
+  - "./stdlib/filters.pz"
   - "./stdlib/transformations.pz"
   - "./stdlib/shapes.pz"
   - "./stdlib/style.pz"
   - "./stdlib/textures.pz"
+  - "./stdlib/screen.pz"
   - "./usercode/grid.pz"
   - "./usercode/seq.pz"
 geometryDirectories:
   - "./geometries"
+debug: false
+decorated: true
+showText: true
+apptitle: "Improviz"
+serverPort: 3000
+osc:
+  enabled: true
+  port: 5510
+screen:
+  front: 0.1
+  back: 100

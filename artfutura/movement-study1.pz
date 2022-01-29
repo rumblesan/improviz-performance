@@ -1,6 +1,5 @@
 stroke(0, 200, 255)
 noFill()
-move(3, -2, 0)
 
 func cycle(speed, delta, scale, &b)
 	x = sin(time*speed) * scale
@@ -18,9 +17,9 @@ func sweep(amount, speed, offset, &b)
       b()
 
 rotate(0, 0, 1)
-5 times with i
+loop 5 times with i
   sweep((i + 0.001), 0.2, i * 2)
-    10 times with j
+    loop 10 times with j
       rotate(time/10)
       cycle(0.1, j, 2)
         cube(2)

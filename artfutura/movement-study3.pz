@@ -5,12 +5,12 @@ rotate(-0.5 * i, -0.5 * i, -0.3 * i)
 
 func grid(width, height, &b)
   move(-width/2, -height/2, 0)
-  	width times with x
-  		height times with y
+  	loop width times with x
+  		loop height times with y
   			move(x, y, 0)
   				b()
 
-3 times with i
+loop 3 times with i
   move(0, 0, -0.3 * i)
     grid(20, 13)
       t = (time / 3) % 1

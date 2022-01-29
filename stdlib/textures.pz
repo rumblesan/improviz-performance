@@ -4,20 +4,34 @@ func texture(name, frame, &blk)
 	s = :texture
 	if (isNull(blk))
 		style(s, name, frame)
+		intMaterial(:material, :texture)
 	else
 		pushScope()
 		style(s, name, frame)
-		blk()
+		intMaterial(:material, :texture)
+		blk(frame)
 		popScope()
 
 func animate(name, speed, &blk)
 	speed := 1
-	f = ((bpm/60) * (time + nudge) * speed) % frames(name)
+	frame = ((bpm/60) * ((time) + nudge) * speed) % frames(name)
 	if (isNull(blk))
-		texture(name, f)
+		texture(name, frame)
+		intMaterial(:material, :texture)
 	else
 		pushScope()
-		texture(name, f)
-		blk()
+		texture(name, frame)
+		intMaterial(:material, :texture)
+		blk(frame)
 		popScope()
+
+func slideshow(image_list, slideshow_speed, animation_speed, &blk)
+	slideshow_speed := 1
+	image = image_list[(slideshow_speed * time) % length(image_list)]
+	animation_speed := 10
+	if (isNull(blk))
+		animate(image, animation_speed)
+	else
+		animate(image, animation_speed)
+			blk()
 

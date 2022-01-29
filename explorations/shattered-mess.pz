@@ -23,7 +23,7 @@ n = 100
 move(0, 0, -n)
 
 rotate(seq(rots), 0, 0)
-n times with x
+loop n times with x
 	move(sin(time) * 3, cos(time/3), 0)
 	rotate(seq(rots), 0, 0.001 + (x / (3 * n)) + time/10000)
 	move(0, 0, 1)
@@ -36,4 +36,3 @@ n times with x
 		animate(:clouds, 10 + (x / n))
 	grid(2, 2)
 		cube(18, 30)
-

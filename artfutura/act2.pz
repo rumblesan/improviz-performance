@@ -11,8 +11,7 @@ fill(...pink, 50)
 stroke(...green)
 
 n = 20
-n times with x
+loop n times with x
 	move(x/2, 0, 0)
 		rotate(time/100, 1, time/3)
 			cube(2, height)
-

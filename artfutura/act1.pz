@@ -9,8 +9,8 @@ noStroke()
 
 func things(col1, col2)
 	move(-1, -1, 0)
-		5 times with x
-			5 times with y
+		loop 5 times with x
+			loop 5 times with y
 				if ((x + y) % 2 > 0)
 					fill(...col1, alpha)
 				else

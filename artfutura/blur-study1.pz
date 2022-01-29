@@ -27,12 +27,11 @@ func pavrect(x, y, z, s)
 
 func gridid(xVal, yVal, zVal)
 	move(-(xVal/2), -(yVal/2), -5)
-		zVal times with z
-			xVal times with x
-				yVal times with y
+		loop zVal times with z
+			loop xVal times with x
+				loop yVal times with y
 					move(x, y, -z)
 						rotate(t + (x / 2 + (y * (time / 10) % 2)))
 							pavrect(x, y, z, 2)
 
 gridid(12, 12, 7)
-

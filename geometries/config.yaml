@@ -11,6 +11,7 @@ geometries:
     file: line.obj
   - name: triangle
     file: triangle.obj
+    removeCrossbar: false
   - name: rectangle
     file: rectangle.obj
   - name: cube

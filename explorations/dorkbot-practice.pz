@@ -18,7 +18,7 @@ func col(f, v)
 
 angs = [[2], [5], [time/10], [1]]
 
-30 times with i
+loop 30 times with i
 	rotate(...seq(angs), time/100)
 	col(fill, i)
 	rectangle(12)

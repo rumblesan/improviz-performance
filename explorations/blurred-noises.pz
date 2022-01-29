@@ -20,7 +20,7 @@ n = 10
 move(0, 3, -n/10)
 
 rotate(seq(rots), 0, 0)
-n times with x
+loop n times with x
 	rotate(seq(rots), time/10, 0.0001 + (x / (3 * n)) + time/100)
 	move(0, 0.01, 0.1)
 	if (x % 5 < 1)
