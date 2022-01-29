@@ -20,5 +20,5 @@ geometries:
     file: cylinder.obj
   - name: sphere
     file: sphere.obj
-  - name: ballerina
-    file: ballerina.obj
+    #  - name: ballerina
+    #    file: ballerina.obj
