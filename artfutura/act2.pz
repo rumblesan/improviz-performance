@@ -1,17 +1,21 @@
-animationStyle(:paintOver)
+
+noFill()
+stroke(255)
+
+background(0)
+t = time / 16
+bpm = 280
+beat = ((bpm/60) * (time + nudge))
 
 alpha = 70
 green = [90, 250, 200]
 aqua = [90, 200, 250]
 pink = [255, 100, 150]
 
-height = 10
-move(-10, 0, 0)
-fill(...pink, 50)
-stroke(...green)
+texture(:code)
+fill(...pink)
 
 n = 20
 loop n times with x
-	move(x/2, 0, 0)
-		rotate(time/100, 1, time/3)
-			cube(2, height)
+	rotate(t)
+	rectangle(4)

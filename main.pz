@@ -1,0 +1,20 @@
+
+bpm = 240
+
+t = (time * 3)
+
+stroke((t % 10) * 25, 0, 0)
+
+scale(1 + (sin(time) / 10))
+
+fill(55, 100, (t % 5) * 50)
+
+//animationStyle(:paintOver)
+
+noFill()
+stroke(55, 100, (t % 5) * 50)
+strokeSize(1)
+
+loop 120 times
+	rotate(time * 5)
+	cube(10)

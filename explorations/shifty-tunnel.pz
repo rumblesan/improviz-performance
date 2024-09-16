@@ -36,6 +36,6 @@ loop n times with x
 		rotate(0, 0, seq(rots))
 		animate(:diagsquares, 100)
 	else
-		animate(:dancer, 10)
+		animate(:dancer, beat)
 	grid(2, 2)
 		sphere(18, 30)

@@ -1,0 +1,21 @@
+background(0)
+t = time / 16
+bpm = 270
+beat = ((bpm/60) * (time + nudge))
+
+green = [90, 250, 200]
+aqua = [90, 200, 250]
+pink = [255, 100, 150]
+
+stroke(...aqua)
+strokeSize((beat % 4) * 10)
+
+paintOver()
+
+if (beat % 7 < 2)
+	animate(:spiral, 3)
+else
+	animate(:hand1, 3)
+loop 1 times with i
+	rotate(round(beat/2))
+	//cube(11)

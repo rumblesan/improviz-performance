@@ -1,6 +1,6 @@
-screenwidth: 640
-screenheight: 480
-# fullscreen: 0
+#screenwidth: 640
+#screenheight: 480
+fullscreen: 1
 font:
   size: 14
   foregroundColour: [0, 0, 0, 255]

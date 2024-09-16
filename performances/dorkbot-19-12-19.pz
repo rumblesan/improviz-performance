@@ -21,4 +21,4 @@ angs = [[2], [5], [time/10], [1]]
 loop 30 times with i
 	rotate(...seq(angs), time/100)
 	col(i)
-	rectangle(12)
+	rectangle(10 + ((t / 10) % 3))

@@ -2,6 +2,14 @@ noFill()
 i = sin(time/10) / 1
 rotate(-0.5 * i, -0.5 * i, -0.3 * i)
 
+animate(:bird2, 0.3)
+
+/*if (time%3 < 1)*/
+  /*animate(:hello5, 0.3)*/
+/*elif (time%3 < 2)*/
+  /*animate(:hello7, 0.3)*/
+/*else*/
+  /*animate(:bird2, 0.3)*/
 
 func grid(width, height, &b)
   move(-width/2, -height/2, 0)
@@ -11,9 +19,9 @@ func grid(width, height, &b)
   				b()
 
 loop 3 times with i
-  move(0, 0, -0.3 * i)
+  move(0, 1, -0.3 * i)
     grid(20, 13)
       t = (time / 3) % 1
       move(t, 0, 0)
-      rotate(0, 0, time/10)
-        cube()
+      rotate(time/5, 0, time/10)
+      rectangle(3)
